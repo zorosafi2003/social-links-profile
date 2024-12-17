@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-main: hsl(0, 0%, 8%);
+  --bg-card: hsl(0, 0%, 12%);
+  --bg-button: hsl(0, 0%, 20%);
+  --bg-button-hover: hsl(0, 0%, 30%);
+  --text-primary: hsl(0, 0%, 100%);
+  --text-secondary: hsla(0, 0%, 100%, 0.75);
+  --accent: hsl(75, 94%, 57%);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-main);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.card {
+  background-color: var(--bg-card);
+  max-width: 384px;
+  width: 100%;
+  padding: 2.5rem;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.profile-img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.location {
+  color: var(--accent);
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+
+.bio {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.link {
+  background-color: var(--bg-button);
+  color: var(--text-primary);
+  text-decoration: none;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+.link:hover {
+  background-color: var(--bg-button-hover);
+}
+
+@media (max-width: 375px) {
+  .card {
+    padding: 1.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
